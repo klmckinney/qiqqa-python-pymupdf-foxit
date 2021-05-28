@@ -17,7 +17,7 @@ These python scripts have been created to
 
 ## Technology notes
 
-[@klmckinney: to be checked; writing this off the top of my head, didn't check. MD5 or SHA1, ...]
+
 
 Qiqqa uses a database record format for the annotations which includes an MD5 hash over the record data. The import script properly creates this hash to ensure that Qiqqa will recognize the new annotation records as valid.
 
@@ -27,6 +27,7 @@ Qiqqa uses a database record format for the annotations which includes an MD5 ha
 
 As the import script directly accesses the SQLite database for writing (annotation records), it is **mandatory** to close and exit your Qiqqa application **before** you run this script as SQLite is not engineered for multi-process access: if you don't, database corruption may result from this simultaneous write access.
 
-Qiqqa is yet unable to paint / show many types of PDF annotation in its own UI. The export and import scripts ...
-[@klmckinney: how do the scripts cope with this last situation? Haven't looked at the code yet; do you add other record subtypes or do you discard/ignore other annotation types]
+Qiqqa is yet unable to paint / show many types of PDF annotation in its own UI.  This repository "skips" that issue and just focuses on how the annotations will work with "external" PDF viewers, not Qiqqa itself.
+
+I anticipate further work in the Qiqqa repository after I work out issues here.
 
