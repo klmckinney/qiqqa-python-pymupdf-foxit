@@ -1,7 +1,7 @@
-This is a repository of my experimentations with merging PDF
+This is a repository of my experimentation with merging PDF
 annotations as done with FoxIt into
 [QIQQA](https://github.com/jimmejardine/qiqqa-open-source) and also
-experimenation with [MuPDF](https://github.com/ArtifexSoftware/mupdf).
+experimentation with [MuPDF](https://github.com/ArtifexSoftware/mupdf).
 I am making this visible on GITHUB to facilitate collaboration with
 the QIQQA project.
 
